@@ -1,0 +1,28 @@
+{
+  "name": "aws-app-config-to-env",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "repository": "git@github.com:Durgaprasad-Budhwani/app-config-to-env.git",
+  "author": "Durgaprasad Budhwani <durgaprasad.budhwani@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@aws-sdk/client-appconfigdata": "^3.301.0",
+    "yaml": "^2.2.1"
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "build-code": "tsc --build",
+    "start": "yarn build",
+    "watch": "watch \"yarn build\" src",
+    "lint": "tslint src/**/*{.ts,.tsx}"
+  },
+  "peerDependencies": {
+    "@aws-sdk/client-appconfigdata": "^3.301.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.15",
+    "tslint": "^6.1.3",
+    "typescript": "^4.8.2",
+    "watch": "^1.0.2"
+  }
+}
